@@ -1,3 +1,19 @@
+@keyframes color-me-in {
+  /* You could think of as "step 1" */
+  0% {
+    background: rgba(248, 122, 4, 0.1); }
+  /* You could think of as "step 2" */
+  50% {
+    background: rgba(248, 122, 4, 0.7); }
+  /* You could think of as "step 3" */
+  100% {
+    background: #f87a04; } }
+
+.animation, .topnav .topnav-item-wrap:focus, .topnav .topnav-item-wrap:hover {
+  animation-name: color-me-in;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards; }
+
 .topnav {
   display: flex;
   flex-direction: row;
@@ -22,12 +38,10 @@
       width: 100%; }
       .topnav .topnav-item-wrap .dropdown-container > div:hover {
         background-color: rgba(190, 200, 216, 0.5); }
-    .topnav .topnav-item-wrap:focus, .topnav .topnav-item-wrap:hover {
-      background-color: rgba(190, 200, 216, 0.7); }
-      .topnav .topnav-item-wrap:focus .dropdown-container, .topnav .topnav-item-wrap:hover .dropdown-container {
-        visibility: visible;
-        /* shows dropdown */
-        opacity: 1;
-        z-index: 1;
-        transform: translateY(0%);
-        transition-delay: 0s, 0s, 0.3s; }
+    .topnav .topnav-item-wrap:focus .dropdown-container, .topnav .topnav-item-wrap:hover .dropdown-container {
+      visibility: visible;
+      /* shows dropdown */
+      opacity: 1;
+      z-index: 1;
+      transform: translateY(0%);
+      transition-delay: 0s, 0s, 0.3s; }

@@ -1,6 +1,35 @@
-$color-grey: rgba(190, 200, 216, 0.5);
 $color-grey-light: rgba(190, 200, 216, 0.3); 
-$color-grey-dark: rgba(190, 200, 216, 0.7); 
+$color-grey: rgba(190, 200, 216, 0.5);
+$color-grey-dark: rgba(190, 200, 216, 0.7);
+$color-grey-opaque: rgb(190, 200, 216); 
+
+$color-orange-super-light: rgba(248, 122, 4, 0.1); 
+$color-orange-light: rgba(248, 122, 4, 0.3); 
+$color-orange: rgba(248, 122, 4, 0.5);
+$color-orange-dark: rgba(248, 122, 4, 0.7);
+$color-orange-opaque: rgb(248, 122, 4); 
+
+// animations
+@keyframes color-me-in {
+  /* You could think of as "step 1" */
+  0% {
+    background: $color-orange-super-light;
+  }
+  /* You could think of as "step 2" */
+  50% {
+    background: $color-orange-dark;
+  }
+  /* You could think of as "step 3" */
+  100% {
+    background: $color-orange-opaque;
+  }
+}
+
+.animation {
+  animation-name: color-me-in;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
 
 .topnav {
   display: flex;
@@ -29,7 +58,7 @@ $color-grey-dark: rgba(190, 200, 216, 0.7);
     }
     &:focus,
     &:hover {
-      background-color: $color-grey-dark;
+      @extend .animation;
       .dropdown-container {
         visibility: visible; /* shows dropdown */
         opacity: 1;
