@@ -1,4 +1,22 @@
 .topnav {
   display: flex;
   flex-direction: row;
-  background-color: rgba(190, 200, 216, 0.5); }
+  background-color: rgba(190, 200, 216, 0.5);
+  justify-content: space-between;
+  margin-top: 40px; }
+  .topnav .topnav-item-wrap {
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+    position: relative; }
+    .topnav .topnav-item-wrap .dropdown-container {
+      display: none;
+      position: absolute;
+      background-color: rgba(190, 200, 216, 0.3);
+      width: 100%; }
+      .topnav .topnav-item-wrap .dropdown-container > div:hover {
+        background-color: rgba(190, 200, 216, 0.5); }
+    .topnav .topnav-item-wrap:hover {
+      background-color: rgba(190, 200, 216, 0.7); }
+      .topnav .topnav-item-wrap:hover .dropdown-container {
+        display: block; }

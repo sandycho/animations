@@ -1,7 +1,32 @@
 $color-grey: rgba(190, 200, 216, 0.5);
+$color-grey-light: rgba(190, 200, 216, 0.3); 
+$color-grey-dark: rgba(190, 200, 216, 0.7); 
 
 .topnav {
   display: flex;
   flex-direction: row;
   background-color: $color-grey;
+  justify-content: space-between;
+  margin-top: 40px;
+  .topnav-item-wrap {
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    .dropdown-container {
+      display: none;
+      position: absolute;
+      background-color: $color-grey-light;
+      width: 100%;
+      > div:hover {
+        background-color: $color-grey;
+      }
+    }
+    &:hover {
+      background-color: $color-grey-dark;
+      .dropdown-container {
+        display: block;
+      }
+    }
+  }
 }
