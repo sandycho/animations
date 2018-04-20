@@ -1,0 +1,40 @@
+{
+  "name": "sandycho-animations",
+  "version": "1.0.0",
+  "description": "examples of web components animated",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp": "^3.9.1",
+    "gulp-scss": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandycho/sandycho-animations.git"
+  },
+  "keywords": [
+    "npm",
+    "html",
+    "css",
+    "scss",
+    "animations",
+    "gulp",
+    "web",
+    "javascript"
+  ],
+  "author": "Sandy Chuchuca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandycho/sandycho-animations/issues"
+  },
+  "homepage": "https://github.com/sandycho/sandycho-animations#readme"
+}

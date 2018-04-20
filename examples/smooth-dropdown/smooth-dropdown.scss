@@ -1,0 +1,7 @@
+$color-grey: rgba(190, 200, 216, 0.5);
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  background-color: $color-grey;
+}
