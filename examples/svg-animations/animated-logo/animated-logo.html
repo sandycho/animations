@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Animations examples</title>
+    <link href="../../dist/css/svg-animations/animated-logo/animated-logo.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div><a href="/">< Back to list</a><div>
+    <div id="logo-container">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewbox="0 0 100 100">
+        <defs>
+          <path id="circle" d="M66.04 50.43c0 7.92-6.27 14.35-13.99 14.35-7.72 0-13.99-6.43-13.99-14.35 0-7.93 6.27-14.36 13.99-14.36 7.72 0 13.99 6.43 13.99 14.36z"/>
+          <path id="hexagon" d="M73.95 50.84L62.83 31.88l-21.89.2-10.78 19.15 11.11 18.95 21.9-.2 10.78-19.14z"/>
+          <path id="square" d="M26.62 26.03h50v50h-50v-50z"/>
+        </defs>
+        <use fill="#c5bf57" xlink:href="#circle"/>
+        <use fill-opacity="0" stroke="#d13535" xlink:href="#hexagon"/>
+        <use fill-opacity="0" stroke="#e6d459" xlink:href="#square"/>
+      </svg>
+    </div>
+  </body>
+</html>
